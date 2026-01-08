@@ -19,7 +19,7 @@ a{
 }
 
 .header{
-    background:url(../irudiak/index0/fondo.jpg);
+    background:url(fondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -386,4 +386,5 @@ a{
             }
     
     
+
 }
