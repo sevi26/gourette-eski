@@ -1,0 +1,257 @@
+.general html{
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.margen-interno{
+    padding:0px 0px;
+}
+a{
+    text-decoration:none;
+
+
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 10px;
+     background:url(../irudiak/index0/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    .menu{
+        background-color:rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: row;
+                height: 120px;
+                flex-wrap: nowrap;
+                align-items: center;
+                border: 4px solid rgba(255, 255, 255, 0.6);
+                margin:20px;
+                padding:0px 10px;
+                border-radius:50px;
+                
+    }
+        .logo img{
+    max-width: 100px;
+    max-height:100px;
+    display: block;
+        }  
+    .nav a{
+        text-decoration:none;
+        font-size:x-large;
+        color:white;
+        margin-right:20px;
+    }
+    .nav a:hover{ 
+                    color:rgb(0, 0, 0);
+                }
+    .social{
+           
+            flex:1 1 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+    }
+    .social a{
+                    color:#faf7f7;
+                    font-size: 18px;
+                    padding: 0px 5px;
+                   
+                }
+                .social a:hover{ 
+                    color:rgb(29, 5, 5);
+                }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 200px,500px,0px;
+        background-color:#f7f7f7;
+        border-radius: 20px;
+        margin:20px;
+       
+
+        
+} 
+    .imagenes{
+        grid-column: 1/6;
+        grid-row:2/3;
+        border-radius:5px;
+        padding:30px;
+        margin: 20px;
+        height: 400px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+
+
+    }  
+    .imagen1{
+        grid-column: 1/2;
+         
+    }     
+    .imagen2{
+        grid-column: 3/4;
+        
+        padding-left:100px;
+        padding-right:0px;
+    }
+    .imagen3{
+        grid-column:2/3;
+        grid-row: 1/2;
+        padding-left:50px;
+    }
+    .imagen1 img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        }
+    .imagen2 img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        }
+    .imagen3 img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        }
+    .texto-principal{
+        grid-column: 1/6;
+        grid-row:1/2;
+        color:black;
+         font-family:'Times New Roman', Times, serif,serif;
+         padding:30px;
+         
+        margin:5px;
+         h3{padding-top:10px; }
+         h3{ text-align: left;}
+         h1{text-align: center;}
+         h1{font-size: 60px;}
+         h1{margin-bottom: 20px;}
+         h2{margin:10px;}
+         
+    }
+       
+
+
+.footer{
+            
+            margin: 10px;
+             padding: 10px;
+        }
+        .pie{
+            background-color:rgb(3, 3, 3);
+            border-radius: 100px;
+            width: 30%;
+            height:30px;
+            margin: auto;
+            text-align: center;
+            align-content: center;
+            padding: 10px;
+            
+        }
+        .pie a{
+            color: #FFF;
+            font-size: 16px;
+            text-transform:uppercase;
+            
+            
+            letter-spacing: 2px;
+        }
+
+
+ @media all and (max-width: 1200px){
+      .header{
+        height: 200px;
+        
+    }
+    .off{
+        display:none;
+    }
+    
+    .container{
+          display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px,1000px,0px;
+        
+        
+        
+        
+        
+    }
+    .imagenes{
+        
+        grid-row: 2/3;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        padding:0px;
+        margin: 10px;
+        height: 1500px;
+        
+        
+        
+    }
+    .imagen1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .imagen2{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .imagen3{
+        grid-row: 3/4;
+        grid-column: 1/2;
+         padding-left: 25%;
+        padding-right: 25%;
+       
+    }
+    .texto-principal{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        
+    }
+    .texto-principal h3{
+        text-align:center;
+        
+               
+    }
+    .navegacion{
+        height: 100px;
+    
+        
+    }
+    .boton-inicio{
+               
+                padding-left: 20px;
+                padding-right: 20px;
+            } 
+            .pie{
+                height: 50px;
+                padding: 10px;
+            }
+
+ }
